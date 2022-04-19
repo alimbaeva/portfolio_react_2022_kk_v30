@@ -4,7 +4,7 @@
 }
 
 .header-nav {
-    background-color: rgb(246, 202, 148);
+    background-color: #8B2252;
     padding: 25px 0;
 
     &__container {
@@ -31,20 +31,20 @@
     }
 
     a {
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 700;
-        color: rgb(46, 2, 2);
+        color: #E6E6FA;
         transition: .2s ease;
         text-transform: capitalize;
 
 
         &:hover {
-            color: rgb(240, 252, 252)
+            color: #28e428;
         }
     }
 
     .active {
-        color: rgb(240, 252, 252);
+        color: #28e428;
     }
 }
 
