@@ -9,3 +9,8 @@
 
 
 страница block  **AXIOS**        **https://github.com/axios/axios**
+
+
+
+
+На странице Blocs **Пагинация**
