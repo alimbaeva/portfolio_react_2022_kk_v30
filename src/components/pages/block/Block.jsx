@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Portfolio() {
+function Block() {
     return (
         <div>
-            <h2>Portfolio</h2>
+            <h2>Block</h2>
         </div>
     )
 }
 
-export default Portfolio
+export default Block
