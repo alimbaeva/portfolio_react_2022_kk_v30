@@ -1,0 +1,61 @@
+.block {
+    h1 {
+        font-size: 40px;
+        margin: 50px 0;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+
+
+        li {
+            list-style: none;
+            width: 32%;
+            padding: 10px;
+            background-color: #8b2251c1;
+            border-radius: 15px;
+
+            h3 {
+                margin: 20px;
+                text-align: center;
+                font-size: 1.5em;
+                color: aliceblue;
+            }
+
+            p {
+                margin: 15px;
+                font-style: oblique;
+                font-weight: 700;
+                color: yellowgreen;
+                letter-spacing: 2px;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    .block {
+        ul {
+            justify-content: space-between;
+
+            li {
+                width: 46%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:560px) {
+    .block {
+        ul {
+            justify-content: space-between;
+
+            li {
+                width: 90%;
+            }
+        }
+    }
+}
