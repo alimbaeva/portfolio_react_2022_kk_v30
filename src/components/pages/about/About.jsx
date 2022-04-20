@@ -78,6 +78,41 @@ function About() {
         }
     ]
 
+    const skills = [
+        {
+            id: 1,
+            svgPath: RiHtml5Fill,
+            title: 'HTML',
+        },
+        {
+            svgPath: RiCss3Fill,
+            title: 'CSS',
+        },
+        {
+            svgPath: DiJavascript1,
+            title: 'Java Script',
+        },
+        {
+            svgPath: DiSass,
+            title: 'Saas',
+        },
+        {
+            Path: DiReact,
+            title: 'React',
+        },
+        {
+            svgPath: RiVuejsFill,
+            title: 'Vue js',
+        },
+        {
+            svgPath: DiMysql,
+            title: 'Mys ql',
+        },
+        {
+            svgPath: SiDocker,
+            title: 'Docker',
+        }
+    ]
     return (
         <section className='about'>
             <div className="container">
@@ -102,44 +137,21 @@ function About() {
                     >My Skills</motion.h3>
 
                     <ul>
-                        <motion.li
-                            whileHover={{
-                                scale: 1.2,
-                                backgroundColor: "rgba(5, 240, 37, 0.8)",
-                                color: "#8B2252"
-                            }}
-                        >
-                            <RiHtml5Fill />
-                            HTML
-                        </motion.li>
-                        <li>
-                            <RiCss3Fill />
-                            CSS
-                        </li>
-                        <li>
-                            <DiJavascript1 />
-                            JavaScript
-                        </li>
-                        <li>
-                            <DiSass />
-                            Sass
-                        </li>
-                        <li>
-                            <DiReact />
-                            React
-                        </li>
-                        <li>
-                            <RiVuejsFill />
-                            Veu.js
-                        </li>
-                        <li>
-                            <DiMysql />
-                            MySQL
-                        </li>
-                        <li>
-                            <SiDocker />
-                            Docker
-                        </li>
+                        {
+                            skills.map((skill, id) => (
+                                <motion.li
+                                    whileHover={{
+                                        scale: 1.2,
+                                        backgroundColor: "rgba(5, 240, 37, 0.8)",
+                                        color: "#8B2252"
+                                    }}
+                                    key={id}
+                                >
+                                    {skill.svgPath}
+                                    {skill.title}
+                                </motion.li>
+                            ))
+                        }
                     </ul>
                 </div>
 

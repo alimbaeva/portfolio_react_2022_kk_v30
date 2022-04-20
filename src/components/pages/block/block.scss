@@ -1,0 +1,113 @@
+.block {
+    h1 {
+        font-size: 40px;
+        margin: 50px 0;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+
+
+        li {
+            list-style: none;
+            width: 32%;
+            padding: 10px;
+            background-color: #8b2251c1;
+            border-radius: 15px;
+
+            h3 {
+                margin: 20px;
+                text-align: center;
+                font-size: 1.5em;
+                color: aliceblue;
+            }
+
+            p {
+                margin: 15px;
+                font-style: oblique;
+                font-weight: 700;
+                color: yellowgreen;
+                letter-spacing: 2px;
+            }
+        }
+
+    }
+
+    .pagination {
+        display: flex;
+        margin: 30px 0;
+
+        li {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            font-size: 22px;
+            border: 2px solid #8B2252;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+
+            &:hover {
+                background-color: yellowgreen;
+                color: #8B2252;
+                transition: 1s ease;
+            }
+
+        }
+
+        .activLi {
+            background-color: yellowgreen;
+            color: #8B2252;
+        }
+    }
+
+    .btns {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    button {
+        width: 150px;
+        height: 35px;
+        font-size: 24px;
+        background-color: white;
+        border: 2px solid #8B2252;
+        border-radius: 10px;
+        margin: 10px 20px;
+
+        &:hover {
+            background-color: yellowgreen;
+            color: #8B2252;
+            transition: 1s ease;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .block {
+        ul {
+            justify-content: space-between;
+
+            li {
+                width: 46%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:560px) {
+    .block {
+        ul {
+            justify-content: space-between;
+
+            li {
+                width: 90%;
+            }
+        }
+    }
+}
