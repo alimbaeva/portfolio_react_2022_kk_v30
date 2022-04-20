@@ -1,9 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import NavBar from './components/navbar/NavBar';
-import Home from './components/pages/home/Home';
-import About from './components/pages/about/About';
-import Block from './components/pages/block/Block';
-import Contact from './components/pages/contact/Contact';
+import { NavBar, Home, About, Block, Contact } from './components';
 import NoteFound from './components/pages/Notefound/NoteFound';
 
 
